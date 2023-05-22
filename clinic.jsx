@@ -3,8 +3,11 @@ import { PlusCircleOutlined, ArrowRightOutlined, ArrowUpOutlined, ArrowLeftOutli
 import { Content } from "next/font/google";
 import React from "react"
 import styles from '../styles/clinic.module.css'
-const onFinish = (appointment) => {
-    console.log('data:', appointment);
+const onFinish = (data) => {
+    console.log(data);
+};
+const onDone = (hearnicForm) => {
+    console.log(hearnicForm);
 };
 
 const File = () => {
@@ -581,80 +584,57 @@ const File = () => {
                 </div>
                 <div className={styles.app2}>
                     <h1>About yourself</h1>
-                    <div style={{ display: "flex" }} >
-                        <Form onFinish={onFinish}
-                            name="appointment">
+                    <Form
+                        name="data"
+                        onFinish={onFinish}>
+                        <div style={{ display: "flex" }}>
                             <Form.Item
-                                name="full Name"
-                                style={{
-                                    color: "white",
-                                    maxWidth: 350,
-                                }}>
-                                <Input type="text" style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Full Name" />
+                                name={["Full Name"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} />
                             </Form.Item>
-                        </Form>
-                        <Form>
                             <Form.Item
-                                name="number"
-                                style={{
-                                    maxWidth: 350,
-                                    marginLeft: 100
-                                }}>
-                                <Input type="number" style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="91+" />
+                                name={["number"]}
+                                style={{ width: 300, marginLeft: 100 }}>
+                                <Input className={styles.lastInput} type="number" placeholder="+91" />
                             </Form.Item>
-                        </Form>
-                    </div>
-                    <div>
-                        <Form>
+                        </div>
+                        <Form.Item
+                            name={["email"]}
+                            style={{ width: 300, }}>
+                            <Input className={styles.lastInput} placeholder="Enter your mail" />
+                        </Form.Item>
+                        <h1 style={{ color: "white" }}>Admission Date</h1>
+                        <div style={{ display: "flex" }}>
+
                             <Form.Item
-                                style={{
-                                    maxWidth: 180,
-                                    marginLeft: 285
-                                }}>
-                                <Input type="text" style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Your email" />
+                                name={["overveiw"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} type="text" placeholder="Overveiw of specialization" />
                             </Form.Item>
-                        </Form>
-                    </div>
-                    <h1>Admission</h1>
-                    <div style={{ display: "flex" }} >
-                        <Form>
                             <Form.Item
-                                style={{
-                                    maxWidth: 350,
-                                }}>
-                                <Input style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Overveiw of specialisaton" />
+                                name={["Checkout"]}
+                                style={{ width: 300, marginLeft: 100 }}>
+                                <Input className={styles.lastInput} type="text" placeholder="Checkout the expert" />
                             </Form.Item>
-                        </Form>
-                        <Form>
+                        </div>
+                        <div>
                             <Form.Item
-                                style={{
-                                    maxWidth: 350,
-                                    marginLeft: 100
-                                }}>
-                                <Input style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Checkout the Expert" />
+                                name={["date"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} type="date" placeholder="date" />
                             </Form.Item>
-                        </Form>
-                    </div>
-                    <div style={{ display: "flex" }} >
-                        <Form>
                             <Form.Item
-                                style={{
-                                    maxWidth: 350,
-                                }}>
-                                <Input style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Date" />
+                                name={["time"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} type="time" placeholder="time" />
                             </Form.Item>
-                        </Form>
-                        <Form>
-                            <Form.Item
-                                style={{
-                                    maxWidth: 350,
-                                    marginLeft: 100
-                                }}>
-                                <Input style={{ borderRadius: 20, backgroundColor: "darkblue", outline: "none", border: "none", color: "white" }} placeholder="Time" />
-                            </Form.Item>
-                        </Form>
-                    </div>
-                    <Button type="primary" style={{ backgroundColor: "darkblue" }}>Submit</Button>
+                        </div>
+                        <Form.Item>
+                            <Button style={{ backgroundColor: "darkblue", borderRadius: 20 }} type="primary" htmlType="submit">Submit</Button>
+                        </Form.Item>
+                    </Form>
+
                 </div>
             </div>
 
@@ -779,17 +759,20 @@ const File = () => {
 
                 </div>
                 <div>
-                    <Form>
+                    <Form
+                        name="hearnicForm"
+                        onFinish={onDone}>
                         <h1 style={{ padding: 20, color: "white" }}>We'll call you back</h1>
                         <div style={{ display: "flex", justifyContent: "space-between", marginLeft: 20 }}>
                             <Form.Item
+                                name={["name"]}
                                 style={{
-
                                     width: 330,
                                 }}>
                                 <Input className={styles.lastInput} placeholder="Name" />
                             </Form.Item>
                             <Form.Item
+                                name={["reason for call"]}
                                 style={{
                                     width: 330,
                                 }}
@@ -799,19 +782,23 @@ const File = () => {
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between", color: "white", marginLeft: 20 }}>
                             <Form.Item
+                                name={["topic"]}
                                 style={{
                                     width: 330,
                                 }}>
                                 <Input className={styles.lastInput} placeholder="Cover the topic of the article" />
                             </Form.Item>
                             <Form.Item
+                                name={["number"]}
                                 style={{
                                     width: 330,
                                 }}>
-                                <Input className={styles.lastInput} placeholder="+91"></Input>
+                                <Input type="number" className={styles.lastInput} placeholder="+91"></Input>
                             </Form.Item>
                         </div>
-                        <Button style={{ borderRadius: 20, marginLeft: 20, backgroundColor: "darkblue" }} type="primary" >Submit</Button>
+                        <Form.Item>
+                            <Button style={{ borderRadius: 20, marginLeft: 20, backgroundColor: "darkblue" }} type="primary" htmlType="submit">Submit</Button>
+                        </Form.Item>
                     </Form>
                 </div>
                 <div className={styles.socailMedia}>

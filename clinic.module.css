@@ -734,6 +734,10 @@
     border-radius: 20px;
 }
 
+.app2>Form>div>Form.Item>Input {
+    background-color: #E02350;
+}
+
 .app1 {
     display: flex;
     margin: 0px;
