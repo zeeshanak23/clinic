@@ -1,0 +1,765 @@
+.aboutList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.1rem;
+}
+
+.hearnicFirstSection {
+    background-color: rgba(58, 10, 10, 0.6);
+    height: 100vh;
+    width: 100vw;
+}
+
+.hearnicImg {
+    object-fit: cover;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -10;
+}
+
+.navLinks>a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    padding: 12px;
+}
+
+.selected {
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 6px;
+}
+
+.contactNumber {
+    background-color: #E02350;
+    border-radius: 12px;
+    font-size: 10px;
+}
+
+.quotes {
+    color: white;
+    padding: 20px 30px;
+    font-size: 2.3rem;
+}
+
+.facts {
+    display: flex;
+    color: white;
+    padding: 5px 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.facts h1 {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.facts p {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.hearnicLast>span {
+    font-size: 30px;
+}
+
+.hearnicLast {
+    justify-content: space-between;
+    margin-top: 70px;
+    display: flex;
+}
+
+.lastSentence {
+    margin-top: 30px;
+}
+
+.hearnicAppoint {
+    color: white;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: rgba(46, 34, 38, 80%);
+    width: 300px;
+    height: 300px;
+    margin-top: -50px;
+}
+
+.aboutusLine {
+    margin-left: 200px;
+}
+
+
+.arrowQuotes {
+    margin-top: 20px;
+}
+
+
+.aboutList>div {
+    width: 190px;
+    padding: 10px;
+}
+
+.aboutList>div p {
+    color: #c8c8c8;
+    font-size: 1.1rem;
+}
+
+.arrow {
+    border-radius: 100%;
+    border: 1px solid grey;
+    background-color: #f7f7f7;
+
+}
+
+.arrowImg {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.aboutusLine h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+
+.aboutList>div h1 {
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+.pngImage img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 4px;
+    margin: 5px;
+}
+
+.pngImage {
+    border: 1 solid;
+    padding: 40px;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 45px;
+}
+
+.gallery_middle_part {
+    margin-right: 10rem;
+    margin-top: 20px;
+}
+
+.clinicGallery {
+    display: flex;
+}
+
+.clinicGallery>div {
+    border-radius: 20px;
+    border: 1px solid #c8c8c8;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 7px 10px;
+    margin: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.galleryHeading {
+    font-size: 1.3rem;
+}
+
+.gallertImg {
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+}
+
+.gallertImg>div {
+    margin: 9px;
+    align-items: center;
+
+}
+
+.sectionGallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drag>span {
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 35px;
+    padding-right: 33px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    margin-top: 200px;
+}
+
+.serviceSection {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.service1 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.service2 {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+.service2>div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.list>div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.list {
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: -70px;
+}
+
+.list>div>h1 {
+    font-size: 1.2rem;
+}
+
+.listPlus {
+    border-radius: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    background-color: #f3f3f3;
+    height: 55px;
+    width: auto;
+    margin: 5px;
+}
+
+.hr {
+    margin-left: 30px;
+    height: 2px;
+    background-color: #d4d4d4;
+    border: none;
+}
+
+.serviceHeading {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 10px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+
+.service2>div {
+    background-color: #f3f3f3;
+    color: black;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 10px
+}
+
+.service2>div:first-child {
+    background-color: black;
+    color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 10px
+}
+
+.callDoctor {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.call1 {
+    color: white;
+    padding: 20px;
+    background-color: gray;
+    width: 400px;
+    height: 250px;
+    font-size: 1.6rem;
+}
+
+.call2 {
+    display: flex;
+    padding: 20px;
+    background-color: #f3f3f3;
+    height: 250px;
+    margin-left: 30px;
+    width: 470px;
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}
+
+.callDoctorBook {
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 10px
+}
+
+.doctorQuotes {
+    display: flex;
+    margin-top: 20px;
+}
+
+.doctorQuotes h1 {
+    font-size: 1.4rem;
+    margin: 10px
+}
+
+.dr {
+    font-size: 1.2rem;
+    margin-left: 40px;
+    color: #c8c8c8
+}
+
+.callImg {
+    border-radius: 100%;
+    border: 1px solid;
+    background-color: white;
+    padding: 10px;
+    margin-top: 40px
+}
+
+.doctorHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.doctorHeading p {
+    color: #848080
+}
+
+.doctorh1 {
+    font-size: 1.4rem;
+}
+
+.doctorSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.d2 {
+    margin-right: 40px;
+}
+
+.d2>div {
+    border: 1px solid lightgray;
+    background-color: #f7f7f7;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.doctorImage {
+    display: flex;
+    margin-top: 0;
+    margin-left: 20rem;
+}
+
+.doctorImage>div {
+    padding: 10px;
+    margin: 15px;
+}
+
+.skill>div {
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skill {
+    display: flex;
+}
+
+.newSkill {
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 60px;
+}
+
+.newSkill2 {
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 140px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.doctorImage h1 {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.doctorImage p {
+    padding: 10px;
+}
+
+.reveiw {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.doctorReveiw {
+    font-style: italic;
+}
+
+.doctorReviewName {
+    font-size: 1.2rem;
+}
+
+.reviewHeading {
+    font-size: 1.6rem;
+}
+
+.reveiw2 {
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.reveiw2>div {
+    margin: 20px;
+}
+
+.r1>span {
+    border: 1px solid lightgray;
+    background-color: #f7f7f7;
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.r1 img {
+    padding: 16px;
+    border-radius: 100%;
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+}
+
+.round>img {
+    border-radius: 100%;
+    margin-left: 60px;
+}
+
+.faqList {
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.faqList>div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.faq1 {
+    display: flex;
+    padding: 100px;
+}
+
+.hr1 {
+    height: 2px;
+    background-color: #d4d4d4;
+    border: none;
+}
+
+.f1 h1 {
+    font-size: 24px;
+}
+
+.faqHeading {
+    font-size: 1.4rem;
+}
+
+.f1 {
+    margin-left: 30px;
+    align-items: center;
+}
+
+.brandLogo {
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+    border: 1px solid #d3d3d3;
+    background-color: #f3f3f3;
+}
+
+.Partner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.partnerHeading {
+    font-size: 1.4rem;
+    margin-left: 90px;
+}
+
+.partnerQuotes {
+    font-size: 1.1rem;
+    margin: 20px;
+    padding: 20px
+}
+
+.pharmaCompany {
+    display: flex;
+    margin: 2px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pharmaCompany>div {
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.pharmaCompany>img {
+    height: 10px;
+}
+
+.imgBlog {
+    border-radius: 100%;
+    height: 65px;
+    width: 65px;
+    border: 1px solid #d3d3d3;
+    background-color: #f3f3f3;
+    margin: 5px 5px;
+    padding: 5px 5px
+}
+
+.blogItem>div {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.blogHeading {
+    font-size: 1.5rem;
+    margin-left: 60px;
+}
+
+.arrow {
+    border-radius: 100%;
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    background-color: #f3f3f3;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    margin-top: 20px;
+}
+
+.arrowImages {
+    margin-right: 100px;
+}
+
+.blogItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blogSentence h1 {
+    font-size: 1.4rem;
+}
+
+.blogLines {
+    padding: 30px;
+    margin-right: 25rem;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.blog2 {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.blog2>div {
+    margin: 0px 20px;
+}
+
+.blogEquipment {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.twoLast {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.terms {
+    background-color: darkslateblue;
+    color: white;
+    max-width: 1650px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.terms>div {
+    margin: 3px 160px;
+}
+
+.upArrow {
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: darkblue;
+}
+
+.sitemap>span {
+    display: flex;
+}
+
+.sitemap {
+    margin-top: 50px;
+}
+
+.sitemap>span p {
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.sitemap h1 {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.roundImage>img {
+    border-radius: 100%;
+    height: 30px;
+    margin: 10px;
+}
+
+.socailMedia {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.lastInput {
+    color: white;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+
+.app1 {
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}
+
+.appointment {
+    background-color: darkslateblue;
+    color: white;
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.apointmentImg {
+    margin-left: 300px;
+}
+
+.app2 {
+    margin-left: 300px;
+}
+
+.lastPageQuotes h1 {
+    font-size: 1.6rem;
+    margin-top: 70px;
+}
