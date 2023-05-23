@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import File from '@/components/clinic'
 import React from 'react'
+import Hearnic from '@/components/hearnic'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <File />
-
+        <Hearnic />
       </main>
     </>
   )

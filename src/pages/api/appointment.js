@@ -3,8 +3,8 @@ import mysql from 'mysql2';
 const connection = mysql.createConnection({
     user: process.env.DB_HOST,
     password: process.env.DB_USERNAME,
-    host: process.env.DB_PASSWORD,
-    port: process.env.DB_PASSWORD,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
     database: "clinic"
 });
 
