@@ -4,18 +4,10 @@ import { Content } from "next/font/google";
 import React, { useEffect } from "react"
 import styles from '../styles/clinic.module.css'
 
-
-
-const onFinish = (data) => {
-    console.log(data);
-};
-
-
-
 const File = () => {
     const onDone = (hearnicForm) => {
         console.log(hearnicForm);
-        fetch('/api/enquiry', {
+        fetch('/api/appointment', {
             method: "POST",
             body: JSON.stringify(hearnicForm),
             headers: { "Content-Type": "application/json" },
@@ -23,7 +15,21 @@ const File = () => {
     };
 
     useEffect(() => {
-        fetch('/api/enquiry').then(res => {
+        fetch('/api/appointment').then(res => {
+        })
+    }, [])
+
+    const onFinish = (data) => {
+        console.log(data);
+        fetch('/api/doctordate', {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+        })
+    };
+
+    useEffect(() => {
+        fetch('/api/doctordate').then(res => {
         })
     }, [])
 
@@ -605,7 +611,7 @@ const File = () => {
                         onFinish={onFinish}>
                         <div style={{ display: "flex" }}>
                             <Form.Item
-                                name={["Full Name"]}
+                                name={["FullName"]}
                                 style={{ width: 300 }}>
                                 <Input className={styles.lastInput} />
                             </Form.Item>

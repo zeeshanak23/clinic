@@ -14,11 +14,10 @@ connection.connect((err) => {
     }
 
 })
-
 export default async function handler(req, res) {
-    const { fullName, reasonForcall, topic, contact } = await req.body
-    const dataTrnsfer = `INSERT INTO appointment(fullName,reasonForcall,topic,contact)
-    VALUES("${fullName}","${reasonForcall}","${topic}",${contact})`
+    const { FullName, number, email, overveiw, Checkout, date, time } = await req.body
+    const dataTrnsfer = `INSERT INTO doctordate(FullName,number,email,overveiw,Checkout,date,time)
+    VALUES("${FullName}","${number}","${email}","${overveiw}","${Checkout}","${date}","${time}")`
     connection.query(dataTrnsfer, function (err, result) {
         if (err) console.log(err);
         // console.log(result);
