@@ -1,40 +1,150 @@
-First we have to create a nextjs project by using this command
+<h1>Create a NextJs Project using ANTD design</h1>
+
+<p>First of all we have to setup nextjs app</p>
+<p>By using this below steps you easily setup nextjs project</p>
+
+## 📦 Install
+
+```bash
 npx create-next-app@latest
+```
 
-then add the project name as per your choice
-ProjectName="Clinic"
+Run the development server
 
-use this command to start the portal
 ```bash
 npm run dev
+```
 
-This starts your Next.js app’s "development server" on port 3000.
+<h1>ANTD DESIGN</h1>
+<p align="center">
+  <a href="https://ant.design">
+    <img width="200" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+  </a>
+</p>
+<p>Ant Design React is dedicated to providing a good development experience for programmers</p>
+<p>An enterprise-class UI design language</p>
+
+Installation ANTD design by using below commands:-
+```bash
+npm install antd
+```
+## Import in Browser
+Add script and link tags in your browser and use the global variable antd.
+
+## ✨ Features
+
+- 🌈 Enterprise-class UI designed for web applications.
+- 📦 A set of high-quality React components out of the box.
+- 🛡 Written in TypeScript with predictable static types.
+- ⚙️ Whole package of design resources and development tools.
+- 🌍 Internationalization support for dozens of languages.
+- 🎨 Powerful theme customization based on CSS-in-JS.
+
+# create a JSX file for each components
+## 🔨 Usage
+
+```jsx
+import { Button, Form, Input } from "antd";
+import styles from '../styles/clinic.module.css'
+import React, { useEffect } from "react"
 
 
-when the nextjs project install completely then we have ready to create website
-and Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+const AppointmentForm = () => {
 
-after that we  have create a function for components according to our design and render it in the index.js for seeing the result and we can also add api for transfer the data from the server to mysql database table this is creating for only form element that are created in our project
+    const onFinish = (data) => {
+        console.log(data);
+        fetch('/api/AppointmentForm', {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+        })
+    };
 
-we can start editing the page by modifying pages/index.js.The page auto-updates as you edit the file.
+    useEffect(() => {
+        fetch('/api/AppointmentForm').then(res => {
+        })
+    }, [])
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    return (
+        <section className={styles.appointmentSection}>
+            <div className={styles.appointment}>
+                <div className={styles.app1}>
+                    <div className={styles.apointmentImg}>
+                        <img src="./img/clinic/appointment.jpg" alt="logo" height="55" width="auto" />
+                    </div>
+                    <div>
+                        <h1 style={{ margin: 50 }}>Make an appointment<br /> with a doctor</h1>
+                    </div>
+                </div>
+                <div className={styles.app2}>
+                    <h1>About yourself</h1>
+                    <Form
+                        name="data"
+                        onFinish={onFinish}>
+                        <div style={{ display: "flex" }}>
+                            <Form.Item
+                                name={["FullName"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} />
+                            </Form.Item>
+                            <Form.Item
+                                name={["number"]}
+                                style={{ width: 300, marginLeft: 100 }}>
+                                <Input className={styles.lastInput} type="number" placeholder="+91" />
+                            </Form.Item>
+                        </div>
+                        <Form.Item
+                            name={["email"]}
+                            style={{ width: 300, }}>
+                            <Input className={styles.lastInput} placeholder="Enter your mail" />
+                        </Form.Item>
+                        <h1 style={{ color: "white" }}>Admission Date</h1>
+                        <div style={{ display: "flex" }}>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+                            <Form.Item
+                                name={["overveiw"]}
+                                style={{ width: 300 }}>
+                                <Input className={styles.lastInput} type="text" placeholder="Overveiw of specialization" />
+                            </Form.Item>
+                            <Form.Item
+                                name={["Checkout"]}
+                                style={{ width: 300, marginLeft: 100 }}>
+                                <Input className={styles.lastInput} type="text" placeholder="Checkout the expert" />
+                            </Form.Item>
+                        </div>
+                    </Form>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+                </div>
+            </div>
+        </section>
+    )
+}
 
-## Learn More
+export default AppointmentForm;
+```
+# Above is the example of AppointmentForm and based on the UI Design created the components and add antd design and css rule for designing the UI part.
 
-To learn more about Next.js, take a look at the following resources:
+## 🔨 Render it in index.js
+```jsx
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Create Next App</title>
+        <meta />
+        <meta />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <"FileName" />
+      </main>
+    </>
+  )
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ## ⌨️ Development
+```bash
+npm start dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Open your browser and visit http://localhost:3000/ 
