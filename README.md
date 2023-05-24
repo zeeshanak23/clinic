@@ -1,5 +1,18 @@
 <h1>Create a NextJs Project using ANTD design</h1>
 
+![Screenshot (208)](https://github.com/zeeshanak23/clinic/assets/122259738/3c063986-1128-4b5d-a502-a447b1c33e0a)
+<!-- ![Screenshot (209)](https://github.com/zeeshanak23/clinic/assets/122259738/60c51b2f-68c0-4090-89fc-e4cef8d6e739)
+![Screenshot (210)](https://github.com/zeeshanak23/clinic/assets/122259738/1a65082a-d81c-4149-8366-29d7ae6ecaec)
+![Screenshot (211)](https://github.com/zeeshanak23/clinic/assets/122259738/f7d56288-2f3f-4df2-8df7-ac8204e8df5c)
+![Screenshot (212)](https://github.com/zeeshanak23/clinic/assets/122259738/4250ea67-df0d-4f91-905c-38a15090f14d)
+![Screenshot (213)](https://github.com/zeeshanak23/clinic/assets/122259738/65b03a8f-5940-4634-83bb-9ef8182a1525)
+![Screenshot (214)](https://github.com/zeeshanak23/clinic/assets/122259738/1fa6cd91-8170-4dca-9648-e643a6ed80c0)
+![Screenshot (215)](https://github.com/zeeshanak23/clinic/assets/122259738/fd9f3e26-b9d1-4eb3-a11b-c87fd14cf5c6)
+![Screenshot (216)](https://github.com/zeeshanak23/clinic/assets/122259738/4b04e089-b401-465e-8ae5-5d7301170ea3)
+![Screenshot (219)](https://github.com/zeeshanak23/clinic/assets/122259738/4ef6414f-20cd-448f-bdfb-6d4021cf0730)
+![Screenshot (218)](https://github.com/zeeshanak23/clinic/assets/122259738/28c7f76f-e0bf-4380-bc3a-328bd6fdda0f) -->
+
+
 <p>First of all we have to setup nextjs app</p>
 <p>By using this below steps you easily setup nextjs project</p>
 
