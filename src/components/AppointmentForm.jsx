@@ -7,7 +7,7 @@ const AppointmentForm = () => {
 
     const onFinish = (data) => {
         console.log(data);
-        fetch('/api/doctordate', {
+        fetch('/api/AppointmentForm', {
             method: "POST",
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json" },
@@ -15,7 +15,7 @@ const AppointmentForm = () => {
     };
 
     useEffect(() => {
-        fetch('/api/doctordate').then(res => {
+        fetch('/api/AppointmentForm').then(res => {
         })
     }, [])
 

@@ -7,7 +7,7 @@ const ContactForm = () => {
 
     const onDone = (hearnicForm) => {
         console.log(hearnicForm);
-        fetch('/api/appointment', {
+        fetch('/api/ContactForm', {
             method: "POST",
             body: JSON.stringify(hearnicForm),
             headers: { "Content-Type": "application/json" },
@@ -15,7 +15,7 @@ const ContactForm = () => {
     };
 
     useEffect(() => {
-        fetch('/api/appointment').then(res => {
+        fetch('/api/ContactForm').then(res => {
         })
     }, [])
     return (
