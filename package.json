@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "antd": "^5.5.0",
+    "dom-elements": "^0.2.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "mysql2": "^3.3.1",

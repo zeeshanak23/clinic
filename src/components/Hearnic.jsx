@@ -9,8 +9,7 @@ import Hero from '@/components/hero'
 import Partner from '@/components/partner'
 import Reveiw from '@/components/review'
 import Service from '@/components/service'
-
-
+import 'antd/dist/reset.css';
 const Hearnic = () => {
     return (
         <div>

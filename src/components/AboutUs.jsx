@@ -3,7 +3,7 @@ import styles from '../styles/clinic.module.css'
 
 const AboutUs = () => {
     return (
-        <section>
+        <section className={styles.aboutSection}>
             <div style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -11,7 +11,7 @@ const AboutUs = () => {
             }}>
                 <div>
                     <span style={{
-                        fontSize: 20,
+                        fontSize: 15,
                         padding: 20,
                     }}><b>About us</b></span>
                 </div>

@@ -4,7 +4,7 @@ import styles from '../styles/clinic.module.css'
 
 const Blog = () => {
     return (
-        <section>
+        <section className={styles.blogSection}>
             <div className={styles.blog}>
                 <div>
                     <h1 className={styles.blogHeading}>Blog</h1>

@@ -20,7 +20,7 @@ const AppointmentForm = () => {
     }, [])
 
     return (
-        <section>
+        <section className={styles.appointmentSection}>
             <div className={styles.appointment}>
                 <div className={styles.app1}>
                     <div className={styles.apointmentImg}>

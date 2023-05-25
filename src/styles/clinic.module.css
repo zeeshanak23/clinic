@@ -4,17 +4,23 @@
     font-size: 1.1rem;
 }
 
+.aboutSection {
+    max-width: 1200px;
+    margin: 0;
+}
+
+
+
 .hearnicFirstSection {
     background-color: rgba(58, 10, 10, 0.6);
     height: 100vh;
-    width: 100vw;
+    width: 98.6vw;
 }
 
 .hearnicImg {
     object-fit: cover;
-    opacity: 1;
     height: 100vh;
-    width: 100vw;
+    width: 98.7vw;
     position: absolute;
     z-index: -10;
 }
@@ -22,7 +28,7 @@
 .navLinks>a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px;
     padding: 12px;
 }
@@ -56,12 +62,12 @@
 
 .facts h1 {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .facts p {
-    font-size: 1.3rem;
-    margin-top: 30px;
+    font-size: 1.1rem;
+    margin-top: 20px;
     margin-bottom: 20px;
 
 }
@@ -87,22 +93,23 @@
     background-color: rgba(46, 34, 38, 80%);
     width: 300px;
     height: 300px;
-    margin-top: -50px;
+    margin-top: -100px;
 }
 
 .aboutusLine {
     margin-left: 200px;
+    margin-top: 30px;
 }
 
 
 .arrowQuotes {
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-left: 120px;
 }
 
 
 .aboutList>div {
-    width: 190px;
-    padding: 10px;
+    width: 125px;
 }
 
 .aboutList>div p {
@@ -114,12 +121,11 @@
     border-radius: 100%;
     border: 1px solid grey;
     background-color: #f7f7f7;
-
 }
 
 .arrowImg {
     margin-left: 20px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .aboutusLine h1 {
@@ -130,7 +136,7 @@
 }
 
 .aboutList>div h1 {
-    font-size: 2.0rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -193,7 +199,7 @@
 
 .sectionGallery {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .drag>span {
@@ -211,7 +217,7 @@
 .serviceSection {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px 60px;
 }
 
@@ -300,7 +306,7 @@
     display: flex;
     max-width: 1200px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .call1 {
@@ -373,7 +379,7 @@
 
 .doctorSection {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 40px;
 }
 
@@ -517,6 +523,8 @@
 
 .faq1 {
     display: flex;
+    max-width: 1200px;
+    margin: 0;
     padding: 100px;
 }
 
@@ -568,7 +576,7 @@
     display: flex;
     margin: 2px;
     padding: 10px;
-    margin: 0 auto;
+    margin: 0;
     max-width: 1200px;
 }
 
@@ -595,7 +603,7 @@
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     background-color: #f3f3f3;
-    width: 100px;
+    width: 150px;
     margin: 5px;
     text-align: center;
 }
@@ -637,16 +645,17 @@
 .blog {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
     max-width: 1200px;
     padding: 40px;
 }
+
 
 .blog2 {
     display: flex;
     max-width: 1200px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 20px;
 }
 
@@ -658,7 +667,7 @@
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     background-color: #f3f3f3;
-    width: 100px;
+    width: 150px;
     margin: 5px;
     text-align: center;
 }
@@ -679,8 +688,8 @@
 .terms {
     background-color: darkslateblue;
     color: white;
-    max-width: 1650px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
     justify-content: center;
 }
 
@@ -747,8 +756,8 @@
     background-color: darkslateblue;
     color: white;
     padding: 30px;
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
 }
 
 .apointmentImg {

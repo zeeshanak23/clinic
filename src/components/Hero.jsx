@@ -2,9 +2,10 @@ import { Button, Image } from "antd";
 import styles from '../styles/clinic.module.css'
 import React from "react";
 
+
 const Hero = () => {
     return (
-        <div>
+        <section className={styles.hero}>
             <div className={styles.hearnicFirstSection}>
 
                 <img className={styles.hearnicImg}
@@ -96,7 +97,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section >
 
     )
 }

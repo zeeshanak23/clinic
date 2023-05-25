@@ -3,7 +3,6 @@ import styles from '../styles/clinic.module.css'
 
 const Gallery = () => {
     return (
-
         <section>
             <div className={styles.sectionGallery}>
                 <div className={styles.gallery}>

@@ -1,4 +1,5 @@
 import mysql from 'mysql2';
+import 'antd/dist/reset.css';
 
 const connection = mysql.createConnection({
     user: process.env.DB_HOST,
