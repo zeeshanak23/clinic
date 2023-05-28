@@ -672,6 +672,7 @@
     text-align: center;
 }
 
+
 .twoLast {
     display: flex;
     place-items: center;
@@ -731,6 +732,10 @@
 .socailMedia {
     justify-content: space-between;
     display: flex;
+}
+
+.lastInput::placeholder {
+    color: white !important;
 }
 
 
