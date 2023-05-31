@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import React from 'react'
-import Hearnic from '@/components/hearnic'
+import Hearnic from '../components/Hearnic'
 
 
 const inter = Inter({ subsets: ['latin'] })
